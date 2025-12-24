@@ -1,7 +1,7 @@
 class Solution {
 public:
     int longestConsecutive(vector<int>& nums) {
-        // brute force solution 
+        // optimal sol
         unordered_set<int> st(nums.begin(),nums.end());
 
         int ans=0,n=nums.size();
