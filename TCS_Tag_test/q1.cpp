@@ -17,9 +17,11 @@ int main(){
     int i=2;
     while(n>1){
         if(findPrime(i)){
-            cout << i << " ";
-            if(n%i==0) n=n/i;
-            else i++;
+            while(n%i==0){
+                cout << i << " ";
+                n=n/i;
+            }
+            i++;
         }
         else i++;
     }
